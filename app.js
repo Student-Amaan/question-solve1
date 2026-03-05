@@ -46,3 +46,11 @@ console.log(largeNumArr([1,2,3,4,5,6,7,7,8,84]))
 // let largeArray = [2,3,5,6,8,6,4,3]
 
 // console.log(largeArray.max())
+
+
+function ispalamdrom(word){
+    let checkword = word.split('').reverse().join('')
+    return word === checkword;
+}
+
+console.log(ispalamdrom('madam'))
