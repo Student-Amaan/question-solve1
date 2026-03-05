@@ -30,3 +30,19 @@ function sumArr(arr){
 }
 
 console.log(sumArr([1,3,4,6,7,5,8,9]))
+
+
+function largeNumArr(a){
+    let add = 0;
+    for(let i= 0; i<a.length; i++){
+        if(a[i] > add)
+        add = a[i]
+    }
+    return add
+}
+console.log(largeNumArr([1,2,3,4,5,6,7,7,8,84]))
+
+
+// let largeArray = [2,3,5,6,8,6,4,3]
+
+// console.log(largeArray.max())
