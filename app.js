@@ -2,55 +2,61 @@ function reverseString(str) {
   return str.split("").reverse().join("");
 }
 
-
-console.log(reverseString("Aman danish"))
+console.log(reverseString("Aman danish"));
 
 // check even or odd
 
 let num = 20;
 
-if (num % 2 === 0){
-    console.log('the number is even')
-}else{
-    console.log('the number is odd')
+if (num % 2 === 0) {
+  console.log("the number is even");
+} else {
+  console.log("the number is odd");
 }
 
-let array = [1,5,3,6,7,5,4,7]
-array.push(8)
+let array = [1, 5, 3, 6, 7, 5, 4, 7];
+array.push(8);
 
-console.log(array)
+console.log(array);
 
-function sumArr(arr){
-    let sum = 0
+function sumArr(arr) {
+  let sum = 0;
 
-    for(let i = 0; i < arr.length; i++){
-        sum += arr[i]
-    }
-    return sum
+  for (let i = 0; i < arr.length; i++) {
+    sum += arr[i];
+  }
+  return sum;
 }
 
-console.log(sumArr([1,3,4,6,7,5,8,9]))
+console.log(sumArr([1, 3, 4, 6, 7, 5, 8, 9]));
 
-
-function largeNumArr(a){
-    let add = 0;
-    for(let i= 0; i<a.length; i++){
-        if(a[i] > add)
-        add = a[i]
-    }
-    return add
+function largeNumArr(a) {
+  let add = 0;
+  for (let i = 0; i < a.length; i++) {
+    if (a[i] > add) add = a[i];
+  }
+  return add;
 }
-console.log(largeNumArr([1,2,3,4,5,6,7,7,8,84]))
-
+console.log(largeNumArr([1, 2, 3, 4, 5, 6, 7, 7, 8, 84]));
 
 // let largeArray = [2,3,5,6,8,6,4,3]
 
 // console.log(largeArray.max())
 
-
-function ispalamdrom(word){
-    let checkword = word.split('').reverse().join('')
-    return word === checkword;
+function ispalamdrom(word) {
+  let checkword = word.split("").reverse().join("");
+  return word === checkword;
 }
 
-console.log(ispalamdrom('madam'))
+console.log(ispalamdrom("madam"));
+
+function factorial(n) {
+  let result = 1;
+
+  for (let i = 1; i <= n; i++) {
+    result = result * i;
+  }
+  return result;
+}
+
+console.log(factorial(5))
