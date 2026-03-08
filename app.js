@@ -87,3 +87,37 @@ function removeDuplicates(arr) {
 }
 
 console.log(removeDuplicates([1, 2, 2,3, 3, 4, 4, 5]));
+
+function simulateAsyncTask() {
+  console.log("Task started");
+  setTimeout(() => {
+    console.log("Task finished");
+  }, 2000);
+}
+simulateAsyncTask();
+
+function simulateMultipleTasks() {
+  setTimeout(() => {
+    console.log("Task 1 finished");
+  }, 1000);
+
+  setTimeout(() => {
+    console.log("Task 2 finished");
+  }, 2000);
+
+  setTimeout(() => {
+    console.log("Task 3 finished");
+  });
+}
+
+simulateMultipleTasks();
+
+function fetchDataWithCallback(callback) {
+  setTimeout(() => {
+    const data = "Fetched data";
+    callback(data);
+  });
+}
+fetchDataWithCallback();
+
+
